@@ -59,7 +59,7 @@ fplot(y)
 [x,fval,exitfilag]=fminbnd('30*x.^2-50*x+8',0,40)
 
 %c
-syms c 
+syms x 
 y=(30*x.^2-50*x+8);
 t1=diff(y,x)
 cozum=double(solve(t1==0,x))
